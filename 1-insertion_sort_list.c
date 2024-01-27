@@ -23,7 +23,7 @@ void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
 
 /**
  * insertion_sort_list - Arranges doubl link ls of integ
- *                       applying branching type algorithm
+ *                       applying branchZZ type algorithm
  * @list: Indicator to head of doubl-link ls of integ
  * Description: Prints ls following every exchange
  */
@@ -38,7 +38,7 @@ void insertion_sort_list(listint_t **list)
 	{
 		tmp = iter->next;
 		insert = iter->prev;
-		while (insert != NULL && iter->p < insert->p)
+		while (insert != NULL && iter->n < insert->n)
 		{
 			swap_nodes(list, &insert, iter);
 			print_list((const listint_t *)*list);
